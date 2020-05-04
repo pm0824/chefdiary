@@ -1,0 +1,252 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.3rem 3rem;
+        display: inline-block;
+        border-radius: 8rem;
+        transition: all .4s ease-in-out;
+        position: relative;
+        font-size: 1.6rem;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &--white{
+        background-color: var(--color-white);
+        color: var( --color-grey-dark-1);
+    }
+
+    &--primary{
+        background-color: var(--color-primary);
+        color: var( --color-white);
+    }
+    &--secondary{
+        background-color: $color-secondary-light;
+        color: var( --color-white);
+    }
+    &--tertiary{
+        background-color: $color-tertiary-light;
+        color: var( --color-white);
+    }
+
+    &:hover{
+        border-radius: 0;
+        box-shadow: 0 .6rem 1.2rem rgba($color-black,.3);
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        border-radius: 0;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        font-size: 1.7rem;
+    }
+
+    &--animated{
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+}
+
+.recipe-box{
+    
+    flex: 1;
+    border-radius: 0.2rem;
+    margin: 0 3.3rem;
+    box-shadow: var(--shadow-light);
+    position: relative;
+
+    &__picture{
+        background-size: cover;
+       
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../img/snacks2.jpeg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../img/desserts2.jpeg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            url(../img/drinks1.jpeg);
+        }
+    }
+
+    &__text{
+       
+        padding: 0.5rem 0.8rem;
+        position: absolute;
+        top:36%;
+        right:10%;
+
+        p{
+            font-size: 2.2rem;
+            text-align: justify;
+            color: var(--color-white);
+        }
+
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-light, .85), 
+            rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-light, .85), 
+            rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &__bottom{
+        text-align: center;
+        margin: 1.5rem 0 3rem 0;
+        
+            ul{
+                list-style: none;
+                width: 50%;
+                margin: 0 auto;
+    
+                li {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    padding: 0.8rem;
+    
+                    &:not(:last-child) {
+                        border-bottom: 1px solid var(--color-grey-light-3);
+                    }
+                }
+            }
+
+    }
+
+}
+
+.composition {
+
+    margin: 6.5rem 0;
+    display: flex;
+    justify-content: center;
+   
+    
+    &__photo {
+        width:28rem;
+        height: 25rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        transition: all .2s;
+        outline-offset: 1rem;
+        opacity: 0.9;
+
+        &:not(:first-child) {
+            margin-left: -4rem;
+        }
+
+        &--1 {
+            transform: translateY(2rem);
+        }
+
+        &--2 {
+            transform: translateY(-1rem);
+        }
+        &--3 {
+            transform: translateY(2rem);
+        }
+        &--4 {
+            transform: translateY(-1rem);
+        }
+
+
+        &:hover {
+            
+            opacity: 1;
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            
+            z-index: 20;
+        }  
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: var(--color-white);
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.features{
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.feature-box {
+    background-color: rgba($color-white, .8);
+    width: 25rem;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+
+   
+
+    &__icon {
+       width: 5rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+       filter: grayscale(1) hue-rotate(200deg);
+        
+       
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
