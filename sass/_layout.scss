@@ -47,12 +47,8 @@
 
 .recipe-section{
     background-color: var(--color-grey-light-1);
-    padding: 15rem 0;
-    margin-top: -20vh;
-
-    &--header{
-        text-align: center;
-    }
+    padding: 10rem 0 6rem 0;
+   
 
     &--body{
         display: flex;
@@ -65,17 +61,14 @@
 
 }
 
-.chef-section{
+.food-section{
     background-color: var(--color-grey-light-1);
     padding: 15rem 0;
     margin-top: -20vh;
 
-    &--header{
-        text-align: center;
-    }
 
     &--button{
-        margin: 8rem auto;
+        margin: 8rem auto 4rem auto;
         text-align: center;
     }
 }

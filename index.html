@@ -26,13 +26,13 @@
             </div>
         </div>
         <div class="content">
-            <div class="chef-section">
-                <div class="chef-section--header">
+            <div class="food-section">
+             
                     <h1 class="heading-primary">
                         <span class="heading-primary--sub">Diary Full Of Tasty Dishes</span>
                     </h1>
-                </div>
-                <div class="chef-section--images">
+              
+                <div class="food-section--images">
                     <div class="composition">
                         <img src="img/plate1.jpeg" class="composition__photo composition__photo--1" alt="">
                         <img src="img/plate5.jpeg" class="composition__photo composition__photo--2" alt="">
@@ -40,7 +40,7 @@
                         <img src="img/plate4.jpeg" class="composition__photo composition__photo--4" alt="">
                     </div>
                 </div>
-                <div class="chef-section--button">
+                <div class="food-section--button">
                     <a href="#" class="btn-text">Go To Diary &rarr;</a>
                 </div>
             </div>
@@ -49,8 +49,10 @@
             <div class="section-features">
                 <div class="features">
                     <div class="feature-box">
-                        <img src="img/healthcare-and-medical.svg" class="feature-box__icon" alt="">
-                        <h3>Nutrition</h3>
+                        <svg class="feature-box__icon">
+                            <use xlink:href="img/sprite.svg#healthcare-and-medical"></use>
+                        </svg>
+                        <h3 class="feature-box__heading">Nutrition</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
@@ -59,21 +61,25 @@
                         <svg class="feature-box__icon">
                             <use xlink:href="img/sprite.svg#cake"></use>
                         </svg>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                        <h3 class="feature-box__heading">Quality</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
                     </div>
                     <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-map"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                        <svg class="feature-box__icon">
+                            <use xlink:href="img/sprite.svg#food-and-restaurant"></use>
+                        </svg>
+                        <h3 class="feature-box__heading">Presentation</h3>
                          <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
                     </div>
                     <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-heart"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                        <svg class="feature-box__icon">
+                            <use xlink:href="img/sprite.svg#food"></use>
+                        </svg>
+                        <h3 class="feature-box__heading">Taste</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
                         </p>
@@ -82,11 +88,11 @@
             </div>
 
             <div class="recipe-section">
-                <div class="recipe-section--header">
+               
                     <h1 class="heading-primary">
                         <span class="heading-primary--sub">Find Your Favourite Recipe</span>
                     </h1>
-                </div>
+               
                 <div class="recipe-section--body">
                     <div class="recipe-box">
                         <div class="recipe-box__picture recipe-box__picture--1">
@@ -144,6 +150,10 @@
                     <a href="#" class="btn btn--primary btn--animated">Explore More Recipes</a>
                 </div>
             </div>
+
+            <footer>
+                
+            </footer>
         </div>
     </div>
 </body>

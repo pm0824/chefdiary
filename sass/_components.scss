@@ -63,6 +63,7 @@
     margin: 0 3.3rem;
     box-shadow: var(--shadow-light);
     position: relative;
+    transition: transform .3s;
 
     &__picture{
         background-size: cover;
@@ -143,6 +144,10 @@
                 }
             }
 
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
     }
 
 }
@@ -238,15 +243,24 @@
    
 
     &__icon {
-       width: 5rem;
-        margin-bottom: .5rem;
-        display: inline-block;
-       filter: grayscale(1) hue-rotate(200deg);
-        
-       
+        height: 6rem;
+        width: 6rem;
+        margin: 2rem 0;
+        fill: var(--color-primary);
+    }
+
+    &__heading{
+
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1.2rem;
+
     }
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
 }
+
+
