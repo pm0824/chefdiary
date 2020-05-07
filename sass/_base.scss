@@ -8,6 +8,13 @@ $color-tertiary-dark: #5643fa;
 $color-black: #000;
 $color-white:#fff;
 
+//Break-points
+$bp-largest:66em;   //1050 px
+$bp-large:51.25em;   //820px
+$bp-medium:56.25em; //900px
+$bp-small:34.5em;   //550px approx
+$bp-smallest:31.25em;    //500px
+
 :root {
     --color-primary:  #55c57a;
     --color-primary-light: #7ed56f;
@@ -45,6 +52,10 @@ $color-white:#fff;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width:$bp-largest) {
+        font-size: 50.5%;
+    }
 }
 
 body {
@@ -76,6 +87,8 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+      
+    
     }
 
     &--sub{

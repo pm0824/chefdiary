@@ -264,3 +264,71 @@
 }
 
 
+.footer {
+    background-color: var(--color-grey-dark-1);
+    padding: 8rem 0 0 0;
+    font-size: 1.7rem;
+    color: var(--color-grey-light-1);
+    min-height: 35rem;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 2rem;  
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        border-top: 1px solid var(--color-grey-dark-3);
+        padding-top: 1.8rem;
+        margin: 2rem;
+        display: inline-block; 
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: var(--color-grey-light-3);
+            background-color: var(--color-grey-dark-1);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: var(--color-primary);
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+    }
+
+   
+}
