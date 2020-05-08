@@ -70,12 +70,12 @@
      }
 
      @media only screen and (max-width:$bp-small) {
-        width: 43rem;
+        width: 42rem;
         margin: 2rem auto;
      }
 
      @media only screen and (max-width:$bp-smallest) {
-        width: 38rem;
+        width: 36rem;
         margin: 2rem auto;
     }
 
@@ -211,13 +211,13 @@
 
         
         @media only screen and (max-width:$bp-small) {
-            width:22rem;
-            height: 20rem;
+            width:21rem;
+            height: 19rem;
         }
 
         @media only screen and (max-width:$bp-smallest) {
-            width:21rem;
-            height: 19rem;
+            width:19rem;
+            height: 18rem;
         }
 
        
@@ -317,7 +317,7 @@
     }
 
     @media only screen and (max-width:$bp-medium) {
-        width: 40rem;
+        width: 38rem;
         font-size: 1.4rem;
         padding: 2rem;
     }
@@ -419,7 +419,7 @@
         text-align: center;
 
         @media only screen and (max-width:$bp-small) {
-            padding-bottom: 2rem;
+            padding:0 2rem 2rem 2rem;
          }
     }
 
