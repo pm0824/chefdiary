@@ -11,8 +11,8 @@ $color-white:#fff;
 //Break-points
 $bp-largest:66em;   //1050 px
 $bp-large:51.25em;   //820px
-$bp-medium:56.25em; //900px
-$bp-small:34.5em;   //550px approx
+$bp-medium:48em; //768px
+$bp-small:38.75em;   //620px approx
 $bp-smallest:31.25em;    //500px
 
 :root {
@@ -103,6 +103,8 @@ body {
         color: transparent; 
 
         transition: all 0.2s;
+
+       
 
         &:hover{
             transform: scale(1.1);

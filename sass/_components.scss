@@ -65,6 +65,15 @@
     position: relative;
     transition: transform .3s;
 
+    @media only screen and (max-width:$bp-medium) {
+        margin:0 2.2rem;
+     }
+
+     @media only screen and (max-width:$bp-small) {
+        width: 45rem;
+        margin: 2rem auto;
+     }
+
     &__picture{
         background-size: cover;
        
@@ -155,9 +164,13 @@
 .composition {
 
     margin: 6.5rem 0;
+    padding: 3rem;
     display: flex;
     justify-content: center;
-   
+
+    @media only screen and (max-width:$bp-small) {
+       flex-wrap: wrap;
+    }
     
     &__photo {
         width:28rem;
@@ -170,8 +183,33 @@
 
         &:not(:first-child) {
             margin-left: -4rem;
+
+            @media only screen and (max-width:$bp-medium) {
+               margin-left: -5rem;
+            }
+
+            @media only screen and (max-width:$bp-small) {
+                margin: 0;
+             }
         }
 
+        @media only screen and (max-width:$bp-large) {
+            width:26rem;
+            height: 24rem;
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+            width:25rem;
+            height: 23rem;
+        }
+
+        
+        @media only screen and (max-width:$bp-small) {
+            width:26rem;
+            height: 24rem;
+        }
+
+       
         &--1 {
             transform: translateY(2rem);
         }
@@ -228,6 +266,12 @@
 .features{
     display: flex;
    justify-content: space-evenly;
+
+   @media only screen and (max-width:$bp-medium) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .feature-box {
@@ -240,6 +284,25 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
 
+    
+    &:not(:last-of-type) {
+        @media only screen and (max-width:$bp-medium) {
+           margin-bottom: 2rem;
+        }
+        
+    }
+
+    @media only screen and (max-width:$bp-large) {
+        width: 23rem;
+        font-size: 1.4rem;
+        padding: 2.3rem;
+    }
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 40rem;
+        font-size: 1.4rem;
+        padding: 2rem;
+    }
    
 
     &__icon {
@@ -247,6 +310,9 @@
         width: 6rem;
         margin: 2rem 0;
         fill: var(--color-primary);
+        @media only screen and (max-width:$bp-medium) {
+            margin: 1.5rem;
+         }
     }
 
     &__heading{
@@ -255,6 +321,11 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         margin-bottom: 1.2rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            margin-bottom: 1rem;
+
+         }
 
     }
 
@@ -328,6 +399,10 @@
 
     &__copyright{
         text-align: center;
+
+        @media only screen and (max-width:$bp-small) {
+            padding-bottom: 2rem;
+         }
     }
 
    

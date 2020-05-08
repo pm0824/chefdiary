@@ -20,6 +20,11 @@
             top: 4rem;
             right: 4rem;
         }
+        
+        @media only screen and (max-width:$bp-small) {
+            top: 3rem;
+            right: 3rem;
+        }
     
     }
 
@@ -39,6 +44,12 @@
         @media only screen and (max-width:$bp-largest) {
             top: 4.2rem;
             right: 4.2rem;
+        }
+
+        
+        @media only screen and (max-width:$bp-small) {
+            top: 3.2rem;
+            right: 3.2rem;
         }
     
       

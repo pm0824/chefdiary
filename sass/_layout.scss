@@ -27,6 +27,13 @@
         height: 88vh;
     }
 
+    
+    @media only screen and (max-width:$bp-small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        height: 88vh;
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;
@@ -46,22 +53,6 @@
     }
 }
 
-.recipe-section{
-    background-color: var(--color-grey-light-1);
-    padding: 10rem 0 6rem 0;
-   
-
-    &--body{
-        display: flex;
-    }
-   
-    &--button{
-        margin: 7rem auto;
-        text-align: center;
-    }
-
-}
-
 .food-section{
     background-color: var(--color-grey-light-1);
     padding: 15rem 0;
@@ -72,7 +63,33 @@
         margin: 8rem auto 4rem auto;
         text-align: center;
     }
+
+    @media only screen and (max-width:$bp-medium) {
+        padding: 10rem 0 15rem 0;
+        margin-top: -10vh;
+    }
 }
+
+.recipe-section{
+    background-color: var(--color-grey-light-1);
+    padding: 10rem 0 6rem 0;
+   
+
+    &--body{
+        display: flex;
+
+        @media only screen and (max-width:$bp-small) {
+            flex-direction: column;
+         }
+    }
+   
+    &--button{
+        margin: 7rem auto;
+        text-align: center;
+    }
+
+}
+
 
 .section-features {
     padding: 20rem 0;
@@ -84,6 +101,14 @@
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
+
+    @media only screen and (max-width:$bp-large) {
+        padding: 15rem 0;
+    }
+    
+    @media only screen and (max-width:$bp-medium) {
+        padding: 10rem 0;
+    }
    
 
     & > * {
