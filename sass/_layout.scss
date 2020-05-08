@@ -62,6 +62,9 @@
     &--button{
         margin: 8rem auto 4rem auto;
         text-align: center;
+        @media only screen and (max-width:$bp-small) {
+            margin: 4rem auto 2rem auto;
+        }
     }
 
     @media only screen and (max-width:$bp-medium) {

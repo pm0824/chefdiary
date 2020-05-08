@@ -288,6 +288,7 @@ body {
   .composition {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0;
   }
 }
 
@@ -660,6 +661,12 @@ body {
 .food-section--button {
   margin: 8rem auto 4rem auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 38.75em) {
+  .food-section--button {
+    margin: 4rem auto 2rem auto;
+  }
 }
 
 @media only screen and (max-width: 48em) {
