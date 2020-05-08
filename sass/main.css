@@ -72,11 +72,19 @@ body {
         */
 }
 
+@media only screen and (max-width: 25.625em) {
+  .heading-primary--main {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+  }
+}
+
 .heading-primary--sub {
   display: block;
   font-size: 3.5rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
+  padding: 1rem 2rem;
   display: inline-block;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--color-primary-light)), to(var(--color-primary-dark)));
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
@@ -174,7 +182,14 @@ body {
 
 @media only screen and (max-width: 38.75em) {
   .recipe-box {
-    width: 45rem;
+    width: 43rem;
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 25.625em) {
+  .recipe-box {
+    width: 38rem;
     margin: 2rem auto;
   }
 }
@@ -320,14 +335,28 @@ body {
 
 @media only screen and (max-width: 38.75em) {
   .composition__photo {
-    width: 26rem;
-    height: 24rem;
+    width: 22rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 25.625em) {
+  .composition__photo {
+    width: 21rem;
+    height: 19rem;
   }
 }
 
 .composition__photo--1 {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
+}
+
+@media only screen and (max-width: 38.75em) {
+  .composition__photo--1 {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
 }
 
 .composition__photo--2 {
@@ -338,6 +367,14 @@ body {
 .composition__photo--3 {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
+}
+
+@media only screen and (max-width: 38.75em) {
+  .composition__photo--3 {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+    z-index: 10;
+  }
 }
 
 .composition__photo--4 {
@@ -628,6 +665,13 @@ body {
 @media only screen and (max-width: 48em) {
   .food-section {
     padding: 10rem 0 15rem 0;
+    margin-top: -10vh;
+  }
+}
+
+@media only screen and (max-width: 25.625em) {
+  .food-section {
+    padding: 12rem 0 15rem 0;
     margin-top: -10vh;
   }
 }

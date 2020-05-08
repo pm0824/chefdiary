@@ -12,8 +12,8 @@ $color-white:#fff;
 $bp-largest:66em;   //1050 px
 $bp-large:51.25em;   //820px
 $bp-medium:48em; //768px
-$bp-small:38.75em;   //620px approx
-$bp-smallest:31.25em;    //500px
+$bp-small:38.75em;   //620px 
+$bp-smallest:25.625em;    //410px
 
 :root {
     --color-primary:  #55c57a;
@@ -87,6 +87,11 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+
+        @media only screen and (max-width:$bp-smallest) {
+            font-size: 6rem;
+            letter-spacing: 1.5rem;
+        }
       
     
     }
@@ -96,6 +101,7 @@ body {
         font-size: 3.5rem;
         font-weight: bold;
         letter-spacing: 0.2rem;
+        padding: 1rem 2rem;
        
         display: inline-block;
         background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
